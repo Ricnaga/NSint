@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap');
+:root{
+    --color-background: #73ee6e;
+    --color-text-logo: #054b03;
+
+    font-size: 60%;
+}
+
+html, body{
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--color-background);
+}
+
+div#container{
+    max-width: 1024px;
+    width: 90vw;    
+ 
+    font: 500 0.8rem 'Press Start 2P';
+    color:var(--color-text-logo);
+}
