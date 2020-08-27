@@ -1,0 +1,48 @@
+
+
+div.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.menu{
+    position: absolute;
+    top: 150px;
+
+    text-align: center;
+    font: 500 1rem 'Press Start 2P';
+    color: var(--color-menu);
+}
+
+div.menu-button{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2rem;
+
+    font: 500 2rem 'Press';
+}
+
+.menu-button a{
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: auto 3rem;
+
+    font: 300 1.6rem 'Permanent Marker';
+    color: var(--color-menu-button);
+    text-decoration: none;
+ }
+
+.menu-button img{
+    width: 15vw;
+    margin: 1rem auto;
+ }
