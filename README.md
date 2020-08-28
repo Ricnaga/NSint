@@ -14,17 +14,30 @@
 <h1 align="center">Instalação</h1>
 Após baixado os arquivos é só prosseguir com as instalações (next, next)
 
+<h1 align="center">Sumário</h1>
 <ul>
     <li><a href="#1">index.html</a></li>
     <li><a href="#1.1">index.css</a></li>
     <li><a href="#1.2">main.css</a></li>
+    <li><a href="#2">employee.html</a></li>
+    <li><a href="#2.1">employee.css</a></li>
+    <li><a href="#2.2">register_employee.html</a></li>
+    <li><a href="#2.3">alter_employee.html</a></li>
 </ul>
 
 <h3 id="1">index.html</h3>
-  <p></p>
+  <p>Onde é feito a primeira página, nela existem apenas um plano de fundo fosco com 3 aplicações na tela, não importa o tamanho da tela, sempre estará alinha os 3 ícones</p>
   <h3 id="1.1">index.css</h3>
-  <p></p>
+  <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis</p>
   <h3 id="1.2">main.css</h3>
+  <p>formata visualmente o fundo de tela, estrutura de todas as páginas, o logo inicial e superficialmente os botões</p>
+  <h3 id="2">employee.html</h3>
+  <p>página para acesso a cadastro e alteração de dados de funcionário</p>
+  <h3 id="2.1">employee.css</h3>
+  <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário </p>
+  <h3 id="2.2">register_employee.html</h3>
+  <p></p>
+  <h3 id="2.3">alter_employee.html</h3>
   <p></p>
 
 <h1 align="center">Referências</h1>

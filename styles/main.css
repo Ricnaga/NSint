@@ -19,3 +19,25 @@ html, body{
 body{
     background:var(--color-background);
 }
+div.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(3px);
+}
+
+div.menu{
+    position: absolute;
+    top: 150px;
+
+    text-align: center;
+    font: 500 1rem 'Press Start 2P';
+    color: var(--color-menu);
+}

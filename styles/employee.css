@@ -1,0 +1,41 @@
+div.menu{
+    top:15px;
+    width: 100vw;
+    font-size: 0.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.button{
+    margin: 1rem auto;
+}
+
+.button a{
+    margin: auto 3rem;
+    padding: 0.1em 2rem;
+
+    border-radius: 0.5rem;
+
+    background: var(--color-menu);
+
+    font: 100 2rem 'Permanent Marker';
+    color: var(--color-menu-button);
+    text-decoration: none;
+}
+
+div iframe{
+    margin: 1em auto auto;
+
+    max-width: 500px;
+    width: 97%;
+    height: 80vh;
+
+    border: none;
+    border-radius: 1em;
+
+    background-color: whitesmoke;
+    
+}
