@@ -13,7 +13,7 @@ div.button{
     margin: 1rem auto;
 }
 
-.button a{
+.button a, .back_index{
     margin: auto 3rem;
     padding: 0.1em 2rem;
 
@@ -30,12 +30,16 @@ div iframe{
     margin: 1em auto auto;
 
     max-width: 500px;
-    width: 97%;
+    width: 85%;
     height: 80vh;
 
     border: none;
     border-radius: 1em;
 
     background-color: whitesmoke;
-    
+}
+
+.back_index{
+    margin: 0.5em auto auto;
+    padding: 0.3em 2em;
 }

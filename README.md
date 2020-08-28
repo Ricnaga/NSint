@@ -22,7 +22,7 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
     <li><a href="#2">employee.html</a></li>
     <li><a href="#2.1">employee.css</a></li>
     <li><a href="#2.2">register_employee.html</a></li>
-    <li><a href="#2.3">alter_employee.html</a></li>
+    <li><a href="#2.3">reg_employee.css</a></li>
 </ul>
 
 <h3 id="1">index.html</h3>
@@ -36,9 +36,9 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <h3 id="2.1">employee.css</h3>
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário </p>
   <h3 id="2.2">register_employee.html</h3>
-  <p></p>
-  <h3 id="2.3">alter_employee.html</h3>
-  <p></p>
+  <p>página web contendo alguns campos básico para simular um cadastro de um funcionário num sistema de uma empresa</p>
+  <h3 id="2.3">reg_employee.css</h3>
+  <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
 
 <h1 align="center">Referências</h1>
 <p>Link abaixo de onde extrai o conteúdo para desenvolver essa aplicação:
