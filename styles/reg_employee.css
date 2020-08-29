@@ -4,6 +4,10 @@ body{
 
 div.container{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
 }
 
 form .container_input{
@@ -12,9 +16,20 @@ form .container_input{
     justify-content: space-between;
 
     font: 2em 'Permanent Marker';
-    margin: 0.5em auto;
+    margin: 0.4em auto;
 }
 
-.container_input input, select{
+.container_input input{
     height: 5vh;
+    width: 60%;    
+}
+
+.container select, button{
+    padding: 0.4em;
+    width: 20vw;
+    border-radius: 0.5em;
+}
+
+#male, #female, #other{
+    width: 1.5em;
 }
