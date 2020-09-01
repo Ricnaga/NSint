@@ -21,7 +21,7 @@ form .container_input{
 
 .container_input input{
     height: 5vh;
-    width: 60%;    
+    width: 60%;
 }
 
 .container select, button{
@@ -40,6 +40,6 @@ form .container_input{
     }
 
     div.container_input{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
