@@ -33,3 +33,13 @@ form .container_input{
 #male, #female, #other{
     width: 1.5em;
 }
+
+@media(max-width:420px){
+    form#reg_form{
+        padding: 0 1em;
+    }
+
+    div.container_input{
+        font-size: 1.5em;
+    }
+}

@@ -20,7 +20,7 @@ div.menu-button{
 .menu-button img{
     width: 15vw;
     margin: 1rem auto;
-    transition: opacity 1s;
+    transition: opacity 2s;
  }
 
  .menu-button img:hover{
