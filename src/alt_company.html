@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../styles/reg_company.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSint - Neon Pinturas sistema interno</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form_company" method="POST">
+            <div class="input_block">
+                <label for="cpnj" name="cnpj">cnpj</label>
+                <input type="text" required>
+            </div>
+
+            <div class="input_block">
+                <label for="name" name="name">Nome</label>
+                <input type="text" required>
+            </div>
+
+            <div class="input_block">
+                <label for="rsocial" name="rsocial">razão social</label>
+                <input type="text" required>
+            </div>            
+
+            <div class="input_block">
+                <label for="iestadual" name="iestadual">inscrição estadual</label>
+                <input type="text" required>
+            </div>
+
+            <div class="input_block">
+                <label for="adress" name="address">endereço</label>
+                <input type="text" required>
+            </div>
+
+            <div class="input_block">
+                <label for="cep" name="cep">cep</label>
+                <input type="text" required>
+            </div>
+
+            <div class="input_block">
+                <label for="payment" name="payment">forma de pagamento</label>
+                <div class="payment">
+                    transferência<input type="checkbox">
+                    cartão<input type="checkbox">
+                    boleto<input type="checkbox">
+                    espécie<input type="checkbox">
+                </div>
+            </div>
+
+            <div class="input_block">
+                <label for="active">conta</label>
+                <select name="active" id="account" required>
+                    <option>ativo</option>
+                    <option>desativado</option>
+                </select>
+
+        </form>
+        <button type="submit" form="form_company">enviar</button>
+    </div>
+    
+</body>
+</html>

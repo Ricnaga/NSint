@@ -50,15 +50,15 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <h3 id="3.2">alt_employee.css</h3>
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
   <h3 id="4.1">company.html</h3>
-  <p></p>
+  <p>responsável por oferecer a opção de cadastro ou alteração de dados de um cliente</p>
   <h3 id="4.2">company.css</h3>
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
   <h3 id="5.1">reg_company.html</h3>
-  <p></p>
+  <p>Apenas o formulário responsável por gerênciar os dados dos clientes</p>
   <h3 id="5.2">reg_company.css</h3>
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
 
 <h1 align="center">Referências</h1>
-<p>Link abaixo de onde extrai o conteúdo para desenvolver essa aplicação:
-https://www.freepik.com/popular-icons
-https://wallpapercave.com/rain-background</p>
+<p>Link abaixo de onde extrai o conteúdo para desenvolver essa aplicação:</p>
+<p>https://www.freepik.com/popular-icons</p>
+<p>https://wallpapercave.com/rain-background</p>
