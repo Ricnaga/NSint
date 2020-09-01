@@ -1,0 +1,37 @@
+div.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.menu{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 500px;    
+    width: 97%;
+    top: 15px;
+
+    font-size: 0.75em;    
+}
+
+div.menu_button, .back_index{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu_button a, .back_index{
+    text-decoration: none;
+    font:200 2.5em 'Permanent Marker';
+
+    background: var(--color-menu-button);
+    border-radius: 0.2em;
+    padding: 2px 10px;
+    margin: 0.5em auto;
+}
+
+iframe{
+    height: 80vh;
+    border-radius: 0.75em;
+}
+

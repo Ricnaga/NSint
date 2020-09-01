@@ -19,6 +19,7 @@ html, body{
 body{
     background:var(--color-background);
 }
+
 div.container{
     display: flex;
     justify-content: center;
@@ -35,8 +36,7 @@ div.container{
 
 div.menu{
     position: absolute;
-    top: 150px;
-
+  
     text-align: center;
     font: 500 1rem 'Press Start 2P';
     color: var(--color-menu);
