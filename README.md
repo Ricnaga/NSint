@@ -14,6 +14,16 @@
 <h1 align="center">Instalação</h1>
 Após baixado os arquivos é só prosseguir com as instalações (next, next)
 
+<h2 align="center">Comandos utilizados no cmd:<br><br>
+<ul>
+<li>npm init -y</li>
+<li>npm install express</li>
+<li>npm install nodemon -D</li>
+<li>npm run dev</li>
+<li>node src/server.js</li>
+</ul>
+</h2>
+
 <h1 align="center">Sumário</h1>
 <ul>
     <li><a href="#1">index.html</a></li>
@@ -29,6 +39,7 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
     <li><a href="#4.2">company.css</a></li>
     <li><a href="#5.1">reg_company.html</a></li>
     <li><a href="#5.2">reg_company.css</a></li>
+    <li><a href="#">server.js</a></li>
 </ul>
 
 <h3 id="1">index.html</h3>
@@ -57,6 +68,8 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <p>Apenas o formulário responsável por gerênciar os dados dos clientes</p>
   <h3 id="5.2">reg_company.css</h3>
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
+  <h3 id="">server.js</h3>
+  <p></p>
 
 <h1 align="center">Referências</h1>
 <p>Link abaixo de onde extrai o conteúdo para desenvolver essa aplicação:</p>
