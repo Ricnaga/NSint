@@ -21,7 +21,8 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <li>npm install express</li>
   <li>npm install nodemon -D</li>
   <li>npm install nunjucks</li>
-  <li>npm run dev</li>  
+  <li>npm install sqlite-async</li> 
+  <li>npm run dev</li>
 </ul>
 </h2>
 
