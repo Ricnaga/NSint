@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="../public/styles/reg_company.css">
+    <link rel="stylesheet" href="styles/reg_company.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSint - Neon Pinturas sistema interno</title>
@@ -41,7 +41,12 @@
 
             <div class="input_block">
                 <label for="payment" name="payment">forma de pagamento</label>
-                <input type="text" required>
+                <div class="payment">
+                    transferência<input type="checkbox">
+                    cartão<input type="checkbox">
+                    boleto<input type="checkbox">
+                    espécie<input type="checkbox">
+                </div>
             </div>
 
         </form>

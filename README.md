@@ -16,11 +16,12 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
 
 <h2 align="center">Comandos utilizados no cmd:<br><br>
 <ul>
-<li>npm init -y</li>
-<li>npm install express</li>
-<li>npm install nodemon -D</li>
-<li>npm run dev</li>
-<li>node src/server.js</li>
+  <li>npm init -y</li>
+  <li>node src/server.js</li>
+  <li>npm install express</li>
+  <li>npm install nodemon -D</li>
+  <li>npm install nunjucks</li>
+  <li>npm run dev</li>  
 </ul>
 </h2>
 
@@ -69,7 +70,7 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <h3 id="5.2">reg_company.css</h3>
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
   <h3 id="">server.js</h3>
-  <p></p>
+  <p>Esse arquivo javascript é responsável por executar dependências nunjucks e express e definir rotas de acesso de páginas web</p>
 
 <h1 align="center">Referências</h1>
 <p>Link abaixo de onde extrai o conteúdo para desenvolver essa aplicação:</p>
