@@ -41,7 +41,8 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
     <li><a href="#4.2">company.css</a></li>
     <li><a href="#5.1">reg_company.html</a></li>
     <li><a href="#5.2">reg_company.css</a></li>
-    <li><a href="#">server.js</a></li>
+    <li><a href="#svjs">server.js</a></li>
+    <li><a href="#dbjs">create_db.js</a></li>
 </ul>
 
 <h3 id="1">index.html</h3>
@@ -70,8 +71,10 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <p>Apenas o formulário responsável por gerênciar os dados dos clientes</p>
   <h3 id="5.2">reg_company.css</h3>
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
-  <h3 id="">server.js</h3>
+  <h3 id="svjs">server.js</h3>
   <p>Esse arquivo javascript é responsável por executar dependências nunjucks e express e definir rotas de acesso de páginas web</p>
+  <h3 id="dbjs">db.js</h3>
+  <p></p>
 
 <h1 align="center">Referências</h1>
 <p>Link abaixo de onde extrai o conteúdo para desenvolver essa aplicação:</p>
