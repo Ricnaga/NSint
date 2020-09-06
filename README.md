@@ -23,6 +23,7 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <li>npm install nunjucks</li>
   <li>npm install sqlite-async</li> 
   <li>npm run dev</li>
+  <li>node src/database/test/test_value_db.js</li>
 </ul>
 </h2>
 
@@ -81,7 +82,7 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <p>formata visualmente os botões e todo conteúdo deles, além do dimensionamento da página em dispositivos móveis e parcialmente do formulário</p>
   <h3 id="svjs">server.js</h3>
   <p>Esse arquivo javascript é responsável por executar dependências nunjucks e express e definir rotas de acesso de páginas web</p>
-  <h3 id="create_t">>create_table.js</h3>
+  <h3 id="create_t">create_table.js</h3>
   <p>Inicializa a dependência sqlite-async, cria o arquivo database.sqlite, abre conexão com o banco de dados local e cria algumas tabelas</p>
   <h3 id="tvdb">test_value_db.js</h3>
   <p>arquivo de teste de valores no banco de dados, nele se gera alguns valores conforme as tabelas do banco de dados e importa o arquivo test_insert_db.js</p>
