@@ -27,7 +27,7 @@ module.exports = async function(db, { testEmployee }){
             "${testEmployee.ncp}",
             "${testEmployee.money}",
             "${testEmployee.admssion}",
-            ${testEmployee.children},
+             ${testEmployee.children},
             "${testEmployee.mail}",
             "${testEmployee.job}",
             "${testEmployee.account}"

@@ -15,12 +15,9 @@ Database.then( async (db) => {
         admssion: '01/08/02020',
         children: 0,
         mail: 'email@email.com',
-        job: 'analista de sistemas',
+        job: 'desenvolvedor front end',
         account: 's',
     }
     
     await test_insert_db(db, { testEmployee })
 })
-
-
-        

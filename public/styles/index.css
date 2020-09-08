@@ -1,3 +1,7 @@
+div.menu{
+    top: 10px;
+}
+
 div.menu-button{
     display: flex;
     justify-content: space-between;
@@ -20,11 +24,12 @@ div.menu-button{
 .menu-button img{
     width: 15vw;
     margin: 1rem auto;
-    transition: opacity 2s;
+    transition: filter 1s, width 0.5s;
  }
 
  .menu-button img:hover{
-    filter: opacity(85%);
+    filter: opacity(80%);
+    width: 260px;
  }
 
  @media(max-width:420px){
