@@ -31,6 +31,6 @@ module.exports = async function(db, { testEmployee }){
             "${testEmployee.mail}",
             "${testEmployee.job}",
             "${testEmployee.account}"
-        );    
+        );
     `)
 }
