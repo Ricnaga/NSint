@@ -1,34 +1,45 @@
+const Database = require('./database/create_table')
+
 function callIndex (req, res){
     return res.render("index.html")
 }
 
 function callEmployee (req, res){
-return res.render("employee.html")
+    return res.render("employee.html")
 }
 
 function callCompany (req, res){
-return res.render("company.html")
+    return res.render("company.html")
 }
 
 function callRegister_Employee (req, res){
-    console.log(req.query)
-return res.render("register_employee.html")
+    return res.render("register_employee.html")
 }
 
 function callRegister_Company (req, res){
-return res.render("reg_company.html")
+    return res.render("reg_company.html")
 }
 
-function callAlter_Employee (req, res){
-return res.render("alter_employee.html")
+async function callAlter_Employee (req, res){
+    const query = `
+    SELECT * FROM db_employee;
+    `
+    try {
+        const db = await Database
+        return res.render('alter_employee.html')
+        
+    } catch (error) {
+        console.log(error)        
+    }
+    
 }
 
 function callAlter_Company (req, res){
-return res.render("alt_company.html")
+    return res.render("alt_company.html")
 }
 
 function callMoney (req,res){
-return res.render("money.html")
+    return res.render("money.html")
 }
 
 module.exports = {
