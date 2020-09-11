@@ -84,7 +84,7 @@ Após baixado os arquivos é só prosseguir com as instalações (next, next)
   <h3 id="svjs">server.js</h3>
   <p>Esse arquivo javascript é responsável por executar dependências nunjucks, express, definir rotas de acesso de páginas web e sinalizar que todas podem ser encontradas no arquivo routes.js</p>
   <h3 id="routes">routes.js</h3>
-  <p></p>
+  <p>Arquivo traça rotas, o servidor indica para o navegador qual página deve ser acessada conforme for acessando as páginas</p>
   <h3 id="create_t">create_table.js</h3>
   <p>Inicializa a dependência sqlite-async, cria o arquivo database.sqlite, abre conexão com o banco de dados local e cria algumas tabelas</p>
   <h3 id="tvdb">test_value_db.js</h3>
