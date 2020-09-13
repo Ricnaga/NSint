@@ -21,12 +21,21 @@ function callRegister_Company (req, res){
 }
 
 async function callAlter_Employee (req, res){
+    const filters = req.query
+
+    if(!filters.cpf){
+        return res.render('alter_employee.html')
+    }
+
     const query = `
-    SELECT * FROM db_employee;
+    SELECT * FROM db_employee 
+    WHERE cpf = ${filters.cpf};
     `
     try {
         const db = await Database
-        return res.render('alter_employee.html')
+        const employeejs = await db.all(query)
+
+        return res.render('alter_employee.html', {employeejs})
         
     } catch (error) {
         console.log(error)        
