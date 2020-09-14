@@ -31,6 +31,7 @@ async function callAlter_Employee (req, res){
     SELECT * FROM db_employee 
     WHERE cpf = ${filters.cpf};
     `
+    
     try {
         const db = await Database
         const employeejs = await db.all(query)
