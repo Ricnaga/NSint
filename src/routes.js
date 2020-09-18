@@ -36,7 +36,7 @@ async function callAlter_Employee (req, res){
         const db = await Database
         const employeejs = await db.all(query)
 
-        return res.render('alter_employee.html', {employeejs})
+        return res.render('alter_employee.html', { employeejs })
         
     } catch (error) {
         console.log(error)        

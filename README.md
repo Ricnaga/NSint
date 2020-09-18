@@ -1,5 +1,5 @@
 <h1 align="center"># NSint - Neon Pinturas sistemas interno</h1>
-<h4 align="right">- Projeto já finalizado</h4>
+<h4 align="right">- Projeto em andamento</h4>
 
 <h2 align="center">Código HTML/CSS simulando uma aplicação interna de uma empresa fictícia de pinturas de Neon. </h2>
 

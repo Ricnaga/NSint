@@ -11,13 +11,15 @@
 <body>
     <div class="container">
         <form id="reg_form">
-<h1>{{employeejs[0].name}}</h1>
             <div class="container_input">
                 <label for="cpf">cpf</label>
-                <input type="text" name="cpf" id="cpf" required>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" required>
             </div>
 
-            <div class="container_input">
+            {% if employeejs == "" %}
+            <p class="no-result">Nenhum funcionário encontrado!!!</p>
+            {% else %}
+            <!-- <div class="container_input">
                 <label for="name">Nome completo</label>
                 <input type="text" name="name" id="name" required>
             </div>
@@ -93,7 +95,9 @@
                 <select name="active" id="account" required>
                     <option>ativo</option>
                     <option>desativado</option>
-                </select>
+                </select> -->
+                {% endif %}
+
         </form>
         <button type="submit" form="reg_form">Enviar</button>
     </div> 
