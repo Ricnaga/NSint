@@ -3,7 +3,7 @@ const test_insert_db = require('./test_insert_db')
 
 Database.then( async (db) => {
     testEmployee = {
-        name: 'ricardo',
+        name: 'Ricardo Naga',
         gender: 'masculino',
         rg: '123456789',
         cpf: '12345678912',
@@ -12,14 +12,15 @@ Database.then( async (db) => {
         phone: '+55 11 1234-4321',
         ncp: '553269',
         money: 1550.00,
-        admssion: '01/08/02020',
+        admission: '01/08/02020',
+        situation: 'solteiro',
         children: 0,
         mail: 'email@email.com',
         job: 'desenvolvedor front end',
         account: 's',
     }
     
-    //abaixo afunção que usa o arquivo test_value_db.js para inserir todos os valores acima no banco de dados
+    //abaixo a função que usa o arquivo test_value_db.js para inserir todos os valores acima no banco de dados
     //será comentado apenas para que a funçãode consulta seja usada, caso necessário reinserir dados acima, descomentar afunção abaixo
     //await test_insert_db(db, { testEmployee })
 

@@ -11,65 +11,64 @@
 <body>
     <div class="container">
         <form id="reg_form">
-            <div class="container_input">
-                <label for="cpf">cpf</label>
-                <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" required>
-            </div>
-
             {% if employeejs == "" %}
             <p class="no-result">Nenhum funcionário encontrado!!!</p>
             {% else %}
-            <!-- <div class="container_input">
+            <div class="container_input">
+                <label for="cpf">cpf</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" value="{{employeejs[0].cpf}}">
+            </div>
+             <div class="container_input">
                 <label for="name">Nome completo</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name"  value="{{employeejs[0].name}}">
             </div>
 
             <div class="container_input">
-                <input type="radio" id="male" name="gender" value="masculino">
+                <input type="radio" id="male" name="gender" value="masculino" {{"checked" if employeejs[0].gender == "masculino" }}>
                 <label for="sex">masculino</label>
-                <input type="radio" id="female" name="gender" value="feminino">
+                <input type="radio" id="female" name="gender" value="feminino" {{"checked" if employeejs[0].gender == "feminino" }}>
                 <label for="sex">feminino</label>
-                <input type="radio" id="other" name="gender" value="outro" required>
+                <input type="radio" id="other" name="gender" value="outro" {{"checked" if employeejs[0].gender == "outro" }}>
                 <label for="sex">outro</label>
             </div>
 
             <div class="container_input">
                 <label for="rg">rg</label>
-                <input type="text" name="rg" id="rg" required>
+                <input type="text" name="rg" id="rg" value="{{employeejs[0].rg}}">
             </div>            
 
             <div class="container_input">
                 <label for="adress">endereço</label>
-                <input type="text" name="address" id="address" required>
+                <input type="text" name="address" id="address" value="{{employeejs[0].adress}}">
             </div>
             <div class="container_input">
                 <label for="pis">pis</label>
-                <input type="text" name="pis" id="pis" required>
+                <input type="text" name="pis" id="pis" value="{{employeejs[0].pis}}">
             </div>
 
             <div class="container_input">
                 <label for="phone">telefone</label>
-                <input name="phone" id="phone" type="tel">
+                <input name="phone" id="phone" type="tel" value="{{employeejs[0].phone}}">
             </div>
 
             <div class="container_input">
                 <label for="ncp">Nº carteira profissional</label>
-                <input type="text" name="ncp" id="ncp" required>
+                <input type="text" name="ncp" id="ncp" value="{{employeejs[0].ncp}}">
             </div>
 
             <div class="container_input">
                 <label for="money">salário</label>
-                <input type="number" name="money" id="money" required>
+                <input type="number" name="money" id="money" value="{{employeejs[0].money}}">
             </div>
 
             <div class="container_input">
                 <label for="admission">data de admissão</label>
-                <input type="date" name="admission" id="admission" required>
+                <input type="date" name="admission" id="admission" value="{{employeejs[0].admission}}">
             </div>
             
             <div class="container_input">
                 <label for="situation">estado civil</label>
-                <select name="situation" id="situation" required>
+                <select name="situation" id="situation" >
                     <option>solteiro</option>
                     <option>casado</option>
                 </select>
@@ -95,7 +94,7 @@
                 <select name="active" id="account" required>
                     <option>ativo</option>
                     <option>desativado</option>
-                </select> -->
+                </select>
                 {% endif %}
 
         </form>
