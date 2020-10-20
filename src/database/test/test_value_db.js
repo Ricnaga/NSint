@@ -12,7 +12,7 @@ Database.then( async (db) => {
         phone: '+55 11 1234-4321',
         ncp: '553269',
         money: 1550.00,
-        admission: '01/08/02020',
+        admission: '2020-08-01',
         situation: 'solteiro',
         children: 0,
         mail: 'email@email.com',

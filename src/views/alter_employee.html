@@ -18,7 +18,7 @@
                 <label for="cpf">cpf</label>
                 <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" value="{{employeejs[0].cpf}}">
             </div>
-             <div class="container_input">
+            <div class="container_input">
                 <label for="name">Nome completo</label>
                 <input type="text" name="name" id="name"  value="{{employeejs[0].name}}">
             </div>
@@ -39,7 +39,7 @@
 
             <div class="container_input">
                 <label for="adress">endereço</label>
-                <input type="text" name="address" id="address" value="{{employeejs[0].adress}}">
+                <input type="text" name="address" id="address" value="{{employeejs[0].address}}">
             </div>
             <div class="container_input">
                 <label for="pis">pis</label>
@@ -69,31 +69,31 @@
             <div class="container_input">
                 <label for="situation">estado civil</label>
                 <select name="situation" id="situation" >
-                    <option>solteiro</option>
-                    <option>casado</option>
+                    <option {{"selected" if employeejs[0].situation == "solteiro" }}>solteiro</option>
+                    <option {{"selected" if employeejs[0].situation == "casado" }}>casado</option>
                 </select>
             </div>
 
             <div class="container_input">
                 <label for="children">filhos</label>
-                <input type="number" name="children" id="children" required>
+                <input type="number" name="children" id="children" value="{{employeejs[0].children}}">
             </div>
 
             <div class="container_input">
                 <label for="mail">email</label>
-                <input type="email" name="mail" id="mail" required>
+                <input type="email" name="mail" id="mail" value="{{employeejs[0].mail}}">
             </div>
 
             <div class="container_input">
                 <label for="job">cargo</label>
-                <input type="text" name="job" id="job" required>
+                <input type="text" name="job" id="job" value="{{employeejs[0].job}}">
             </div>
 
             <div class="container_input">
                 <label for="active">conta</label>
-                <select name="active" id="account" required>
-                    <option>ativo</option>
-                    <option>desativado</option>
+                <select name="active" id="account">
+                    <option {{"selected" if employeejs[0].situation == "ativo" }}>ativo</option>
+                    <option {{"selected" if employeejs[0].situation == "desativado" }}>desativado</option>
                 </select>
                 {% endif %}
 
