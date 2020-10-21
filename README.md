@@ -23,11 +23,11 @@ Clone este repositório: git clone <https://github.com/Ricnaga/NSint> \
 Acesse o projeto: cd NSint \
 Inicie um projeto: npm init -y \
 Ainda na raíz será necessário entrar com o comando abaixo para instalar o [Express](https://expressjs.com/pt-br/starter/installing.html): \
-npm install express \
+npm install express 
 
 ### <div align="center">Nodemon</div>
 Após instalado o Express, é necessário instalar o monitorador [Nodemon](https://nodemon.io/): \
-npm install nodemon -D \
+npm install nodemon -D 
 
 ### <div align="center">Nunjucks</div>
 Instale o [Nunjucks](https://mozilla.github.io/nunjucks/): npm install nunjucks
@@ -37,7 +37,7 @@ Instale o banco de dados [Sqlite](https://www.nodenpm.com/sqlite-async/package.h
 Antes de iniciar a aplicação, de preferência, o banco de dados pode ter armazenado algum valor prévio com o seguinte comando:\
 node src/database/test/test_value_db.js
 Feito todos os passos, é hora de iniciar a aplicação: npm run dev \
-Iniciado cada aplicação, abra qualquer navegador e digite http://localhost:5500 \
+Iniciado cada aplicação, abra qualquer navegador e digite http://localhost:5500 
 
 ## <div align="center">Tecnologias utilizadas<div>
 - [HTML](https://www.w3.org/HTML)
@@ -52,10 +52,10 @@ Iniciado cada aplicação, abra qualquer navegador e digite http://localhost:550
 
 
 ## <div align="center">Autor<div>
-Atividade de minha autoria com exceção dos ícones onde foram extraídos dos sites:\
+Atividade de minha autoria com exceção dos ícones onde foram extraídos dos sites:
 <p>https://www.freepik.com/popular-icons</p>
 <p>https://wallpapercave.com/rain-background</p>
-Gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona \
+Gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona
 <a href="https://www.linkedin.com/in/ricardo-nagatomy-56553254"><img src="https://img.shields.io/badge/-RicardoNaga-blue?style=flat-square&logo=Linkedin&logoColor=white"></a>
 <a href="https://app.rocketseat.com.br/me/ricardo-nagatomy-08130"><img src="https://img.shields.io/badge/-Rocketseat-000?style=flat-square&logo=&logoColor=white"></a>
 
