@@ -23,12 +23,10 @@ server.use(express.static("public"))
 .get("/", callIndex)
 
 .get("/employee", callEmployee)
-.get("/register_employee", callRegister_Employee)
-.get("/alter_employee", callAlter_Employee)
+.get("/regEmployee", callRegister_Employee)
 
 .get("/company", callCompany)
-.get("/reg_company", callRegister_Company)
-.get("/alt_company", callAlter_Company)
+.get("/regCompany", callRegister_Company)
 
 .get("/money", callMoney)
 
