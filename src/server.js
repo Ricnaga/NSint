@@ -4,10 +4,8 @@ const server = express()
 const {
     callIndex,
     callEmployee,
-    callAlter_Employee,
     callRegister_Employee,
     callCompany,
-    callAlter_Company,
     callRegister_Company,
     callMoney
 } = require('./routes')

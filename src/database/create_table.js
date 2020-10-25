@@ -5,18 +5,10 @@ function init(db){
     CREATE TABLE IF NOT EXISTS db_employee(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
-        gender TEXT,
-        rg TEXT,
         cpf TEXT,
-        address TEXT,
-        pis TEXT,
         phone TEXT,
-        ncp TEXT,
         money DOUBLE,
         admission TEXT,
-        situation TEXT,
-        children INTEGER,
-        mail TEXT,
         job TEXT,
         account CHAR
     );
@@ -26,9 +18,7 @@ function init(db){
         id_employee INTEGER,
         name TEXT,
         cnpj TEXT,
-        iestadual TEXT,
         address TEXT,
-        zipcode TEXT,
         payment TEXT,
         account CHAR
     );
