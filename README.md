@@ -11,38 +11,24 @@
 <!--te-->
 
 ## <div align="center">Requisitos<div>
-Antes de começar é necessário instalar algumas ferramentas, tais como um editor de códigos para realizar compilação dos mesmos. Os códigos desse repositório foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/) e [Git Bash](https://gitforwindows.org/). Após instalados, no prompt de comando será necessário instalar as seguintes dependências.\
-OBS:Todas as tecnologias e dependências serão instaladas via prompt de comando (bash ou cmd) e todas foram instaladas a partir da pasta raíz do repositório.
-- [Express.js](#express)
-- [Nodemon](#nodemon)
-- [Nunjucks](#nunjucks)
-- [Sqlite-async](#sqlite-async)
+Antes de começar é necessário instalar algumas ferramentas, tais como um editor de códigos para realizar compilação dos mesmos. Os códigos desse repositório foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/) e [Git Bash](https://gitforwindows.org/). Após instalados, será necessário instalar o também o [Yarn](https://yarnpkg.com/) para que seja possível automatizar as instalações de todas as dependências que foram usadas nessa aplicação.
 
-### <div align="center">Express</div>
-Clone este repositório: git clone <https://github.com/Ricnaga/NSint> \
-Acesse o projeto: cd NSint \
-Inicie um projeto: npm init -y \
-Ainda na raíz será necessário entrar com o comando abaixo para instalar o [Express](https://expressjs.com/pt-br/starter/installing.html): \
-npm install express 
-
-### <div align="center">Nodemon</div>
-Após instalado o Express, é necessário instalar o monitorador [Nodemon](https://nodemon.io/): \
-npm install nodemon -D 
-
-### <div align="center">Nunjucks</div>
-Instale o [Nunjucks](https://mozilla.github.io/nunjucks/): npm install nunjucks
-
-### <div align="center">Sqlite-async</div>
-Instale o banco de dados [Sqlite](https://www.nodenpm.com/sqlite-async/package.html): npm install sqlite-async \
+No terminal, realize a clonagem do repositório.\
+$ git clone <https://github.com/Ricnaga/NSint> \
+Acesse o projeto.\
+$ cd NSint \
+Execute o comando yarn para reaver todos as dependências instaladas dessa aplicação.\
 Antes de iniciar a aplicação, de preferência, o banco de dados pode ter armazenado algum valor prévio com o seguinte comando:\
-node src/database/test/test_value_db.js
-Feito todos os passos, é hora de iniciar a aplicação: npm run dev \
+$ node src/database/test/test_value_db.js
+Feito todos os passos, é hora de iniciar a aplicação: \
+$ npm run dev \
 Iniciado cada aplicação, abra qualquer navegador e digite http://localhost:5500 
 
 ## <div align="center">Tecnologias utilizadas<div>
 - [HTML](https://www.w3.org/HTML)
 - [CSS](https://www.w3.org/Style/CSS/)
 - [NodeJS](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/getting-started/install)
 - [Git Bash](https://gitforwindows.org/)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Express](https://expressjs.com/pt-br/starter/installing.html)
