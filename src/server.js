@@ -28,4 +28,6 @@ server.use(express.static("public"))
 
 .get("/money", callMoney)
 
-.listen(5500)
+.listen(5500, () =>{
+    console.log("Server localhost:5500 is being watched 👀 !")
+})
