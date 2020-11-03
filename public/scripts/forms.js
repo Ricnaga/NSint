@@ -3,30 +3,38 @@
         var divForms = document.querySelector('.forms')
         divForms.innerHTML = ''
 
-        var arrayLabel = [
-            createLabel('name', "Nome completo"),
-            createLabel('cpf', "CPF"),
-            createLabel('phone', "telefone"),
-            createLabel('money', "salário"),
-            createLabel('admission', "data de admissão"),
-            createLabel('job', "cargo")
+        var arrayElement = [
+            [
+             createLabel('name', "Nome completo"),
+             createLabel('cpf', "CPF"),
+             createLabel('phone', "telefone"),
+             createLabel('money', "salário"),
+             createLabel('admission', "data de admissão"),
+             createLabel('job', "cargo")
+            ],
+            [
+             createInput('text', 'name', 'name'),
+             createInput('text', 'cpf', 'cpf'),
+             createInput('phone', 'phone', 'tel'),
+             createInput('number', 'money', 'money'),
+             createInput('date', 'admission', 'admission'),
+             createInput('text', 'job', 'job')
+            ]
         ]
 
-        var arrayInput = [
-            createInput('text', 'name', 'name'),
-            createInput('text', 'cpf', 'cpf'),
-            createInput('phone', 'phone', 'tel'),
-            createInput('number', 'money', 'money'),
-            createInput('date', 'admission', 'admission'),
-            createInput('text', 'job', 'job')
-        ]
-        
-        for(var i = 0; i < arrayLabel.length; i++){
+        for(var i = 0; i < arrayElement[0].length; i++){
             var divContainerInput = createDiv()
-            var labelName = arrayLabel[i];
-            var inputElemnt = arrayInput[i];
+            var labelName = arrayElement[0][i];
+            var inputElemnt = arrayElement[1][i];
             appendDiv(divContainerInput, labelName, inputElemnt, divForms)
         }
+ 
+        var btnForms = document.createElement('button')
+        btnForms.setAttribute('type', 'submit')
+        btnForms.setAttribute('class', 'sendForm')
+        btnForms.appendChild(document.createTextNode("Enviar"))
+        divForms.appendChild(btnForms)
+
     }
 
     function createDiv(){
@@ -49,7 +57,8 @@
         newInput.setAttribute('type', attr)
         newInput.setAttribute('name', name)
         newInput.setAttribute('id', id)
-
+        newInput.setAttribute('required', "")
+           
         return newInput
     }
 

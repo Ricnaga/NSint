@@ -13,11 +13,11 @@ div.button{
     margin: 1rem auto;
 }
 
-.register, .disable, .back_index{
+.register, .disable, .sendForm, .back_index{
     margin: auto 3rem;
     padding: 0.1em 2rem;
 
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 
     background: var(--color-menu);
 
@@ -26,7 +26,7 @@ div.button{
     text-decoration: none;
 }
 
-div.forms {
+div.forms  {
     height: 75vh;
 
     display: flex;
@@ -34,12 +34,20 @@ div.forms {
     align-items: center;
     justify-content: center;
 }
+
 .container_input{
     display: flex;
     flex-direction: column;
 
-    margin: 2rem;
+    margin: 1.7rem;
 
+    font-size: 1.7rem;
+}
+
+div input {
+    width: 25vw;
+    height: 4vh;
+    text-align: center;
 }
 
 .back_index{
@@ -52,15 +60,12 @@ div.forms {
         height: 95%;        
     }
 
-    .button a, .back_index{
-        margin: 0.4rem 1rem;
-        padding: 0.2em;
-    
-        border-radius: 1.5rem;
+    div.forms {
+        height: 70vh;
     }
 
-    .menu iframe{
-        width: 98vw;
+    div input{
+        width: 75vw;
     }
 
 }
