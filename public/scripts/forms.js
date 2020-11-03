@@ -1,24 +1,71 @@
-/* <div class="forms"></div> */
-    document.querySelector('.button').onclick =  function signUp(){
+    document.querySelector('.register').onclick =  function signUp(){
 
         var divForms = document.querySelector('.forms')
         divForms.innerHTML = ''
     
-        var divContainerInput = document.createElement('div')
-        divContainerInput.setAttribute('class', 'container_input')
+        var divContainerInput = createDiv()
+        var labelName = createLabel('name', "Nome completo")
+        var inputElemnt = createInput('text', 'name', 'name')
 
-        var labelName = document.createElement('label')
-        labelName.setAttribute('for', 'name')
-        labelName.appendChild(document.createTextNode("Nome completo"))
+        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
 
+        var divContainerInput = createDiv()
+        var labelName = createLabel('cpf', "CPF")
+        var inputElemnt = createInput('text', 'cpf', 'cpf')
 
-        var inputElemnt = document.createElement('input')
-        inputElemnt.setAttribute('type', 'text')
-        inputElemnt.setAttribute('name', 'name')
-        inputElemnt.setAttribute('id', 'name')
+        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
 
-        divContainerInput.appendChild(labelName)
-        divContainerInput.appendChild(inputElemnt)
-        divForms.appendChild(divContainerInput)
+        var divContainerInput = createDiv()
+        var labelName = createLabel('phone', "telefone")
+        var inputElemnt = createInput('phone', 'phone', 'tel')
 
+        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
+
+        var divContainerInput = createDiv()
+        var labelName = createLabel('money', "salário")
+        var inputElemnt = createInput('number', 'money', 'money')
+
+        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
+
+        var divContainerInput = createDiv()
+        var labelName = createLabel('admission', "data de admissão")
+        var inputElemnt = createInput('date', 'admission', 'admission')
+
+        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
+
+        var divContainerInput = createDiv()
+        var labelName = createLabel('job', "cargo")
+        var inputElemnt = createInput('text', 'job', 'job')
+
+        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
+    }
+
+    function createDiv(){
+        var containerInput = document.createElement('div')
+        containerInput.setAttribute('class', 'container_input')
+
+        return containerInput
+    }
+
+    function createLabel(attr, text){
+        var newLabel = document.createElement('label')
+        newLabel.setAttribute('for', attr)
+        newLabel.appendChild(document.createTextNode(text))
+
+        return newLabel
+    }
+
+    function createInput(attr, name, id){
+        var newInput = document.createElement('input')
+        newInput.setAttribute('type', attr)
+        newInput.setAttribute('name', name)
+        newInput.setAttribute('id', id)
+
+        return newInput
+    }
+
+    function appendDiv(appendDivContainerInput, appendLabelName, appendInputElemnt, appendDivForms){
+        appendDivContainerInput.appendChild(appendLabelName)
+        appendDivContainerInput.appendChild(appendInputElemnt)
+        appendDivForms.appendChild(appendDivContainerInput)
     }
