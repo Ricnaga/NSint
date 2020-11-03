@@ -1,43 +1,32 @@
-    document.querySelector('.register').onclick =  function signUp(){
+    document.querySelector('.register').onclick = function signUp(){
 
         var divForms = document.querySelector('.forms')
         divForms.innerHTML = ''
-    
-        var divContainerInput = createDiv()
-        var labelName = createLabel('name', "Nome completo")
-        var inputElemnt = createInput('text', 'name', 'name')
 
-        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
+        var arrayLabel = [
+            createLabel('name', "Nome completo"),
+            createLabel('cpf', "CPF"),
+            createLabel('phone', "telefone"),
+            createLabel('money', "salário"),
+            createLabel('admission', "data de admissão"),
+            createLabel('job', "cargo")
+        ]
 
-        var divContainerInput = createDiv()
-        var labelName = createLabel('cpf', "CPF")
-        var inputElemnt = createInput('text', 'cpf', 'cpf')
-
-        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
-
-        var divContainerInput = createDiv()
-        var labelName = createLabel('phone', "telefone")
-        var inputElemnt = createInput('phone', 'phone', 'tel')
-
-        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
-
-        var divContainerInput = createDiv()
-        var labelName = createLabel('money', "salário")
-        var inputElemnt = createInput('number', 'money', 'money')
-
-        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
-
-        var divContainerInput = createDiv()
-        var labelName = createLabel('admission', "data de admissão")
-        var inputElemnt = createInput('date', 'admission', 'admission')
-
-        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
-
-        var divContainerInput = createDiv()
-        var labelName = createLabel('job', "cargo")
-        var inputElemnt = createInput('text', 'job', 'job')
-
-        appendDiv(divContainerInput, labelName, inputElemnt, divForms)
+        var arrayInput = [
+            createInput('text', 'name', 'name'),
+            createInput('text', 'cpf', 'cpf'),
+            createInput('phone', 'phone', 'tel'),
+            createInput('number', 'money', 'money'),
+            createInput('date', 'admission', 'admission'),
+            createInput('text', 'job', 'job')
+        ]
+        
+        for(var i = 0; i < arrayLabel.length; i++){
+            var divContainerInput = createDiv()
+            var labelName = arrayLabel[i];
+            var inputElemnt = arrayInput[i];
+            appendDiv(divContainerInput, labelName, inputElemnt, divForms)
+        }
     }
 
     function createDiv(){
@@ -68,4 +57,8 @@
         appendDivContainerInput.appendChild(appendLabelName)
         appendDivContainerInput.appendChild(appendInputElemnt)
         appendDivForms.appendChild(appendDivContainerInput)
+    }
+
+    document.querySelector('.disable').onclick = function deactivated(){
+        alert('check')
     }
