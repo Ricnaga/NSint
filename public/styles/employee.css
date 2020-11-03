@@ -13,7 +13,7 @@ div.button{
     margin: 1rem auto;
 }
 
-.button a, .back_index{
+.register, .disable, .back_index{
     margin: auto 3rem;
     padding: 0.1em 2rem;
 
@@ -26,17 +26,20 @@ div.button{
     text-decoration: none;
 }
 
-div iframe{
-    margin: 1em auto auto;
+div.forms {
+    height: 75vh;
 
-    max-width: 500px;
-    width: 90%;
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container_input{
+    display: flex;
+    flex-direction: column;
 
-    border: none;
-    border-radius: 1em;
+    margin: 2rem;
 
-    background-color: whitesmoke;
 }
 
 .back_index{
