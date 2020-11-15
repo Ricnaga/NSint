@@ -17,13 +17,14 @@ nunjucks.configure('src/views',{
 })
 
 server
-.use(express.static("public"))
 .use(express.urlencoded({extended: true}))
+.use(express.static("public"))
+
 .get("/", callIndex)
 
 .get("/employee", callEmployee)
 .post("/signUp_employee", callSignUp_Employee)
-.post("/disable_employee", callRemove_Employee)
+.get("/disable_employee", callRemove_Employee)
 
 .get("/company", callCompany)
 

@@ -48,7 +48,7 @@
 
         var formElement = document.createElement('form')
         formElement.setAttribute('action', '/disable_employee')
-        formElement.setAttribute('method', 'POST')
+        formElement.setAttribute('method', 'GET')
         formElement.setAttribute('id', 'deactivate_employee')
 
         var btnForms = document.createElement('button')
