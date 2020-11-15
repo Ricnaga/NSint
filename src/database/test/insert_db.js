@@ -1,4 +1,4 @@
-module.exports = async function(db, { Employee }){
+module.exports = async function(db, employee){
 
     const insertOnTable = await db.run(`
         INSERT INTO db_employee (
@@ -10,13 +10,14 @@ module.exports = async function(db, { Employee }){
             job,
             account
         ) VALUES (
-            '${Employee.name}',
-            "${Employee.cpf}",
-            "${Employee.phone}",
-            "${Employee.money}",
-            "${Employee.admission}",
-            "${Employee.job}",
-            's'
+            "${employee.name}",
+            "${employee.cpf}",
+            "${employee.phone}",
+            "${employee.money}",
+            "${employee.admission}",
+            "${employee.job}",
+            "s"
         );
     `)
+
 }

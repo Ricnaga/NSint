@@ -13,7 +13,7 @@ function callCompany (req, res){
 }
 
 async function callSignUp_Employee (req, res){
-    const insertInto = require('./database/test/insert_db')
+    const insertInDataBase = require('./database/test/insert_db')
     
     const dataEmployee = {
         name: req.body.name,
@@ -25,9 +25,9 @@ async function callSignUp_Employee (req, res){
     }
 
     try {
-        const db = Database;
-        await insertInto(db, {dataEmployee})
-
+        const db = await Database;
+        await insertInDataBase(db, dataEmployee)
+        
     } catch (error) {
         console.error(error)
     }
