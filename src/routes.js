@@ -12,12 +12,12 @@ function callCompany (req, res){
     return res.render("company.html")
 }
 
-function callRegister_Employee (req, res){
-    return res.render("register_employee.html")
+async function callSignUp_Employee (req, res){
+    return res.send("Siiiimmmm")
 }
 
-function callRegister_Company (req, res){
-    return res.render("register_company.html")
+function callRemove_Employee (req, res){
+    return res.send("Siiiimmmm")
 }
 
 
@@ -28,8 +28,8 @@ function callMoney (req,res){
 module.exports = {
     callIndex,
     callEmployee,
-    callRegister_Employee,
+    callSignUp_Employee,
+    callRemove_Employee,
     callCompany,
-    callRegister_Company,
     callMoney
 }

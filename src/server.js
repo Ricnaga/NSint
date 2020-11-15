@@ -4,9 +4,9 @@ const server = express()
 const {
     callIndex,
     callEmployee,
-    callRegister_Employee,
+    callSignUp_Employee,
+    callRemove_Employee,
     callCompany,
-    callRegister_Company,
     callMoney
 } = require('./routes')
 
@@ -14,17 +14,18 @@ const nunjucks = require('nunjucks')
 nunjucks.configure('src/views',{
     express: server,
     noCache: true,
-
 })
 
-server.use(express.static("public"))
+server
+.use(express.static("public"))
+.use(express.urlencoded({extended: true}))
 .get("/", callIndex)
 
 .get("/employee", callEmployee)
-.get("/regEmployee", callRegister_Employee)
+.post("/signUp_employee", callSignUp_Employee)
+.post("/disable_employee", callRemove_Employee)
 
 .get("/company", callCompany)
-.get("/regCompany", callRegister_Company)
 
 .get("/money", callMoney)
 
