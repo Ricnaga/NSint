@@ -1,6 +1,4 @@
     document.querySelector('.register').onclick = function signUp(){
-// {/* <form action="/save-classes" id="create-class" method="POST"></form> */}
-// <button type="submit" form="create-class"></button>
         var divForms = document.querySelector('.forms')
         divForms.innerHTML = ''
 

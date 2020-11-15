@@ -13,11 +13,30 @@ function callCompany (req, res){
 }
 
 async function callSignUp_Employee (req, res){
-    return res.send("Siiiimmmm")
+    const insertInto = require('./database/test/insert_db')
+    
+    const dataEmployee = {
+        name: req.body.name,
+        cpf: req.body.cpf,
+        phone: req.body.phone,
+        money: req.body.money,
+        admission: req.body.admission,
+        job: req.body.job,
+    }
+
+    try {
+        const db = Database;
+        await insertInto(db, {dataEmployee})
+
+    } catch (error) {
+        console.error(error)
+    }
+
+    return res.send(dataEmployee)
 }
 
 function callRemove_Employee (req, res){
-    return res.send("Siiiimmmm")
+    return res.send(req.name)
 }
 
 
