@@ -16,6 +16,7 @@ div.button{
 .register, .disable, .back_index{
     margin: auto 3rem;
     padding: 0.1em 2rem;
+    border: 0;
 
     border-radius: 1rem;
 
@@ -28,11 +29,13 @@ div.button{
 
 div.forms  {
     height: 75vh;
-
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    text-transform: uppercase;
 }
 
 .container_input{
@@ -48,6 +51,14 @@ div input {
     width: 25vw;
     height: 4vh;
     text-align: center;
+    border-radius: 0.5em;
+}
+
+button#signUpButton, button#deactivateButton{
+    padding: 0.6rem 5em;
+    border: 0;
+    border-radius: 0.5em;
+    font: 100 1.5rem 'Permanent Marker';
 }
 
 .back_index{
@@ -55,7 +66,7 @@ div input {
     padding: 0.3em 2em;
 }
 
-@media(max-width:420px){
+@media(max-width:720px){
     div.menu{
         height: 95%;        
     }

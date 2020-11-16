@@ -9,7 +9,7 @@ function callEmployee (req, res){
 }
 
 function callCompany (req, res){
-    return res.render("company.html")
+    return res.render("arquivo company . html")
 }
 
 async function callSignUp_Employee (req, res){
@@ -27,12 +27,12 @@ async function callSignUp_Employee (req, res){
     try {
         const db = await Database;
         await insertInDataBase(db, dataEmployee)
-        
+
     } catch (error) {
         console.error(error)
     }
-
-    return res.send(dataEmployee)
+    
+    return res.render('employee.html', {message: "Cadastro realizado com sucesso!"})
 }
 
 function callRemove_Employee (req, res){

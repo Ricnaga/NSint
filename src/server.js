@@ -1,4 +1,5 @@
 const express = require('express')
+const nunjucks = require('nunjucks')
 const server = express()
 
 const {
@@ -10,7 +11,7 @@ const {
     callMoney
 } = require('./routes')
 
-const nunjucks = require('nunjucks')
+
 nunjucks.configure('src/views',{
     express: server,
     noCache: true,
