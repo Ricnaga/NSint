@@ -2,8 +2,22 @@
         var divForms = document.querySelector('.forms')
         divForms.innerHTML = ''
 
-        var formElement = createFormBtn('form', 'action', '/signUp_employee', 'method', 'POST', 'sign_employee', 'animate-up')
-        var btnForms = createFormBtn('button','type', 'submit', 'form', 'sign_employee', 'signUpButton', 'animate-appear')
+        var formElement = createFormBtn(
+            'form', 
+            'action', '/signUp_employee', 
+            'method', 'POST', 
+            'sign_employee', 
+            'animate-up'
+            )
+
+        var btnForms = createFormBtn(
+            'button',
+            'type', 'submit', 
+            'form', 'sign_employee', 
+            'signUpButton', 
+            'animate-appear'
+            )
+
         btnForms.appendChild(document.createTextNode("Cadastrar"))
 
         var arrayElement = [
@@ -33,7 +47,13 @@
         divForms.appendChild(btnForms)
     }    
     
-    function createFormBtn(type, typeAction, destinyType, methodsndForm, POSTsndID, typeId, nameClass){
+    function createFormBtn(
+        type, 
+        typeAction, destinyType, 
+        methodsndForm, POSTsndID, 
+        typeId, 
+        nameClass
+        ){
 
         var formbtnCreated = document.createElement(type)
         formbtnCreated.setAttribute(typeAction, destinyType)

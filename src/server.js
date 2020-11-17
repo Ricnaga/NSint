@@ -32,5 +32,5 @@ server
 .get("/money", callMoney)
 
 .listen(5500, () =>{
-    console.log("Server localhost:5500 is being watched 👀 !")
+    console.log("👀 Server localhost:5500 is being watched \n 'Quis custodiet ipsos custodes? 🤔'!")
 })

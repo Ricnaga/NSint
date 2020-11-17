@@ -59,20 +59,8 @@ div.forms  {
 }
 
 .container_input_header input{
-    border-radius: 0.8rem 0 0 0.8rem;
+    border-radius: 0.8rem;
     padding: 1rem;
-}
-
-.container_input_header button{
-    border-radius: 0 0.6rem 0.6rem 0;
-    padding: 1rem;
-}
-
-p.dataform{
-    text-align: start;
-    font-size: 1em;;
-
-    padding: 0.3em;
 }
 
 button#signUpButton, button#deactivateButton{
@@ -108,15 +96,6 @@ button#signUpButton, button#deactivateButton{
     .container_input_header input{
         padding: 0.5rem;
     }
-    
-    .container_input_header button{
-         padding: 0.5rem;
-    }
 
-    p.dataform{
-        font-size: 0.7em;
-    
-        padding: 0.3em;
-    }
 
 }
