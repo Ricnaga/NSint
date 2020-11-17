@@ -13,7 +13,7 @@ function callCompany (req, res){
 }
 
 async function callSignUp_Employee (req, res){
-    const insertInDataBase = require('./database/test/insert_db')
+    const insertInDataBase = require('./database/insertIntoDB')
     
     const dataEmployee = {
         name: req.body.name,
@@ -28,23 +28,53 @@ async function callSignUp_Employee (req, res){
         const db = await Database;
         await insertInDataBase(db, dataEmployee)
 
+        return res.render('employee.html', 
+        {
+            message: "Cadastro realizado com sucesso!"
+        })
+
     } catch (error) {
         console.error(error)
     }
     
-    return res.render('employee.html', {message: "Cadastro realizado com sucesso!"})
+    
 }
 
 async function callRemove_Employee (req, res){
+    
+    const query = `
+        SELECT * FROM db_employee 
+        WHERE 
+        cpf = ${req.body.cpf}
+        `
+    
     try {
+        const db = await Database
+        const consult = await db.all(query)
+
+        if(consult < 1){
+            return res.render('employee.html', 
+            {
+                message: "Usuário inexistente no banco de dados!!!"
+            })
+        }
+
+        await db.run(`
+            UPDATE db_employee 
+            SET account = 'n'
+            WHERE cpf = ${req.body.cpf}
+        `)
+
+        return res.render('employee.html', 
+        {
+            message: "Usuário desativado com sucesso!!!"
+        })
         
     } catch (error) {
         console.error(error)
     }
-
-    return res.render('employee.html')
+    
 }
-
 
 function callMoney (req,res){
     return res.render("money.html")

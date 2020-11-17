@@ -1,5 +1,5 @@
 const Database = require('../create_table')
-const insert_db = require('./insert_db')
+const insert_db = require('../insertIntoDB')
 
 Database.then( async (db) => {
     testEmployee = {
@@ -15,8 +15,4 @@ Database.then( async (db) => {
     //abaixo a função que usa o arquivo test_value_db.js para inserir todos os valores acima no banco de dados
     //será comentado apenas para que a funçãode consulta seja usada, caso necessário reinserir dados acima, descomentar afunção abaixo
     await insert_db(db, { testEmployee })
-
-    //função abaixo realiza consulta na tabela db_employee
-    const consulting = await db.all('SELECT * FROM db_employee')
-    console.log(consulting)
 })
