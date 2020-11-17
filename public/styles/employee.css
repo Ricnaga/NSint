@@ -47,11 +47,32 @@ div.forms  {
     font-size: 1.7rem;
 }
 
-div input {
+.container_input input {
     width: 25vw;
-    height: 4vh;
+    height: 3.5vh;
     text-align: center;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
+}
+
+.container_input_header{
+    margin-bottom: 50px;
+}
+
+.container_input_header input{
+    border-radius: 0.8rem 0 0 0.8rem;
+    padding: 1rem;
+}
+
+.container_input_header button{
+    border-radius: 0 0.6rem 0.6rem 0;
+    padding: 1rem;
+}
+
+p.dataform{
+    text-align: start;
+    font-size: 1em;;
+
+    padding: 0.3em;
 }
 
 button#signUpButton, button#deactivateButton{
@@ -59,6 +80,11 @@ button#signUpButton, button#deactivateButton{
     border: 0;
     border-radius: 0.5em;
     font: 100 1.5rem 'Permanent Marker';
+}
+
+#sucessMsg {
+    font-size: 1.5rem;
+    color: red;
 }
 
 .back_index{
@@ -75,8 +101,22 @@ button#signUpButton, button#deactivateButton{
         height: 70vh;
     }
 
-    div input{
+    .container_input input{
         width: 75vw;
+    }
+
+    .container_input_header input{
+        padding: 0.5rem;
+    }
+    
+    .container_input_header button{
+         padding: 0.5rem;
+    }
+
+    p.dataform{
+        font-size: 0.7em;
+    
+        padding: 0.3em;
     }
 
 }

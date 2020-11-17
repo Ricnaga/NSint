@@ -2,17 +2,8 @@
         var divForms = document.querySelector('.forms')
         divForms.innerHTML = ''
 
-        var formElement = document.createElement('form')
-        formElement.setAttribute('action', '/signUp_employee')
-        formElement.setAttribute('method', 'POST')
-        formElement.setAttribute('id', 'sign_employee')
-        formElement.setAttribute('class', 'animate-up')
-
-        var btnForms = document.createElement('button')
-        btnForms.setAttribute('type', 'submit')
-        btnForms.setAttribute('form', 'sign_employee')
-        btnForms.setAttribute('id', 'signUpButton')
-        btnForms.setAttribute('class', 'animate-appear')
+        var formElement = createFormBtn('form', 'action', '/signUp_employee', 'method', 'POST', 'sign_employee', 'animate-up')
+        var btnForms = createFormBtn('button','type', 'submit', 'form', 'sign_employee', 'signUpButton', 'animate-appear')
         btnForms.appendChild(document.createTextNode("Cadastrar"))
 
         var arrayElement = [
@@ -40,27 +31,17 @@
         }
 
         divForms.appendChild(btnForms)
-    }
+    }    
+    
+    function createFormBtn(type, typeAction, destinyType, methodsndForm, POSTsndID, typeId, nameClass){
 
-    document.querySelector('.disable').onclick = function deactivated(){
-        var divForms = document.querySelector('.forms')
-        divForms.innerHTML = ''
+        var formbtnCreated = document.createElement(type)
+        formbtnCreated.setAttribute(typeAction, destinyType)
+        formbtnCreated.setAttribute(methodsndForm, POSTsndID)
+        formbtnCreated.setAttribute('id', typeId)
+        formbtnCreated.setAttribute('class', nameClass)
 
-        var formElement = document.createElement('form')
-        formElement.setAttribute('action', '/disable_employee')
-        formElement.setAttribute('method', 'GET')
-        formElement.setAttribute('class', 'animate-up')
-        formElement.setAttribute('id', 'deactivate_employee')
-
-        var btnForms = document.createElement('button')
-        btnForms.setAttribute('type', 'submit')
-        btnForms.setAttribute('form', 'deactivate_employee')
-        btnForms.setAttribute('id', 'deactivateButton')
-        btnForms.setAttribute('class', 'animate-appear')
-        btnForms.appendChild(document.createTextNode("Desativar"))
-        
-        appendDiv(createDiv(), createLabel('cpf', "CPF"), createInput('text', 'name', 'name'), divForms, formElement)
-        divForms.appendChild(btnForms)
+        return formbtnCreated
     }
 
     function createDiv(){

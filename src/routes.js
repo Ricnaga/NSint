@@ -35,8 +35,14 @@ async function callSignUp_Employee (req, res){
     return res.render('employee.html', {message: "Cadastro realizado com sucesso!"})
 }
 
-function callRemove_Employee (req, res){
-    return res.send(req.name)
+async function callRemove_Employee (req, res){
+    try {
+        
+    } catch (error) {
+        console.error(error)
+    }
+
+    return res.render('employee.html')
 }
 
 
