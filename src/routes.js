@@ -35,6 +35,10 @@ async function callSignUp_Employee (req, res){
     return res.render('employee.html', {message: "Cadastro realizado com sucesso!"})
 }
 
+async function callListEmployee(){
+
+}
+
 async function callRemove_Employee (req, res){
     try {
         
@@ -54,6 +58,7 @@ module.exports = {
     callIndex,
     callEmployee,
     callSignUp_Employee,
+    callListEmployee,
     callRemove_Employee,
     callCompany,
     callMoney

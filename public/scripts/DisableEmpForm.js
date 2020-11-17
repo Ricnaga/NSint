@@ -34,6 +34,7 @@
  
         var inputCPF = createInput('text', 'cpf', 'cpf')
         var btnSearch = document.createElement('button')
+        btnSearch.setAttribute('type', 'button')
         btnSearch.setAttribute('onclick', 'ListEmployee()')
         btnSearch.appendChild(document.createTextNode('Listar'))
 
@@ -54,6 +55,8 @@
     }
 
     function ListEmployee(){
+        const {callListEmployee} = require('../../src/routes')
+
         alert(document.getElementById('cpf').value)
     }
 
