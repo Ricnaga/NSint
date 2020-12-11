@@ -38,9 +38,6 @@ Iniciado cada aplicação, abra qualquer navegador e digite http://localhost:550
 
 
 ## <div align="center">Autor<div>
-Atividade de minha autoria com exceção dos ícones onde foram extraídos dos sites:
-<p>https://www.freepik.com/popular-icons</p>
-<p>https://wallpapercave.com/rain-background</p>
 Gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona
 <a href="https://www.linkedin.com/in/ricardo-nagatomy-56553254"><img src="https://img.shields.io/badge/-RicardoNaga-blue?style=flat-square&logo=Linkedin&logoColor=white"></a>
 <a href="https://app.rocketseat.com.br/me/ricardo-nagatomy-08130"><img src="https://img.shields.io/badge/-Rocketseat-000?style=flat-square&logo=&logoColor=white"></a>
