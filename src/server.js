@@ -1,36 +1,42 @@
-const express = require('express')
-const nunjucks = require('nunjucks')
-const server = express()
+const express = require('express');
+const nunjucks = require('nunjucks');
+
+const server = express();
 
 const {
-    callIndex,
-    callEmployee,
-    callSignUp_Employee,
-    callRemove_Employee,
-    callCompany,
-    callMoney
-} = require('./routes')
+  callIndex,
+  callEmployee,
+  callSignUp_Employee,
+  callRemove_Employee,
+  callCompany,
+  callSignUp_Company,
+  callRemove_Company,
+  callMoney,
+} = require('./routes');
 
-
-nunjucks.configure('src/views',{
-    express: server,
-    noCache: true,
-})
+nunjucks.configure('src/views', {
+  express: server,
+  noCache: true,
+});
 
 server
-.use(express.urlencoded({extended: true}))
-.use(express.static("public"))
+  .use(express.urlencoded({ extended: true }))
+  .use(express.static('public'))
 
-.get("/", callIndex)
+  .get('/', callIndex)
 
-.get("/employee", callEmployee)
-.post("/signUp_employee", callSignUp_Employee)
-.post("/disable_employee", callRemove_Employee)
+  .get('/employee', callEmployee)
+  .post('/signUp_employee', callSignUp_Employee)
+  .post('/disable_employee', callRemove_Employee)
 
-.get("/company", callCompany)
+  .get('/company', callCompany)
+  .post('/signUp_company', callSignUp_Company)
+  .post('/disable_company', callRemove_Company)
 
-.get("/money", callMoney)
+  .get('/money', callMoney)
 
-.listen(5500, () =>{
-    console.log("👀 Server localhost:5500 is being watched \n 'Quis custodiet ipsos custodes? 🤔'!")
-})
+  .listen(5500, () => {
+    console.log(
+      "👀 Server localhost:5500 is being watched - 'Quis custodiet ipsos custodes? 🤔'!",
+    );
+  });

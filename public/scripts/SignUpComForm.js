@@ -5,10 +5,10 @@ document.querySelector('.register').onclick = function signUp() {
   const formElement = createFormBtn(
     'form',
     'action',
-    '/signUp_employee',
+    '/signUp_company',
     'method',
     'POST',
-    'sign_employee',
+    'sign_company',
     'animate-up',
   );
 
@@ -17,7 +17,7 @@ document.querySelector('.register').onclick = function signUp() {
     'type',
     'submit',
     'form',
-    'sign_employee',
+    'sign_company',
     'signUpButton',
     'animate-appear',
   );
@@ -26,20 +26,16 @@ document.querySelector('.register').onclick = function signUp() {
 
   const arrayElement = [
     [
-      createLabel('name', 'Nome completo'),
-      createLabel('cpf', 'CPF'),
-      createLabel('phone', 'telefone'),
-      createLabel('money', 'salário'),
-      createLabel('admission', 'data de admissão'),
-      createLabel('job', 'cargo'),
+      createLabel('name', 'Nome da empresa'),
+      createLabel('cnpj', 'cnpj'),
+      createLabel('address', 'Endereço'),
+      createLabel('payment', 'pagamento'),
     ],
     [
       createInput('text', 'name', 'name'),
-      createInput('text', 'cpf', 'cpf'),
-      createInput('phone', 'phone', 'tel'),
-      createInput('number', 'money', 'money'),
-      createInput('date', 'admission', 'admission'),
-      createInput('text', 'job', 'job'),
+      createInput('text', 'cnpj', 'cnpj'),
+      createInput('text', 'address', 'address'),
+      createInput('number', 'payment', 'payment'),
     ],
   ];
 

@@ -5,10 +5,10 @@ document.querySelector('.disable').onclick = function deactivated() {
   const formElement = createFormBtn(
     'form',
     'action',
-    '/disable_employee',
+    '/disable_company',
     'method',
     'POST',
-    'deactivate_employee',
+    'deactivate_company',
     'animate-up',
   );
 
@@ -17,15 +17,15 @@ document.querySelector('.disable').onclick = function deactivated() {
     'type',
     'submit',
     'form',
-    'deactivate_employee',
+    'deactivate_company',
     'deactivateButton',
     'animate-appear',
   );
 
   appendDiv(
     createDiv(),
-    createLabel('cpf', 'cpf'),
-    createInput('text', 'cpf', 'cpf'),
+    createLabel('cnpj', 'cnpj'),
+    createInput('text', 'cnpj', 'cnpj'),
     divForms,
     formElement,
   );

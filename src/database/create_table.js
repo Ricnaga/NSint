@@ -1,7 +1,7 @@
-const Database = require('sqlite-async')
+const Database = require('sqlite-async');
 
-function init(db){
-    return db.exec(`
+function init(db) {
+  return db.exec(`
     CREATE TABLE IF NOT EXISTS db_employee(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
@@ -15,14 +15,13 @@ function init(db){
 
     CREATE TABLE IF NOT EXISTS db_company(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        id_employee INTEGER,
         name TEXT,
         cnpj TEXT,
         address TEXT,
-        payment TEXT,
+        payment DOUBLE,
         account CHAR
     );
-    `)
+    `);
 }
 
-module.exports = Database.open(__dirname + '/database.sqlite').then(init)
+module.exports = Database.open(`${__dirname}/database.sqlite`).then(init);

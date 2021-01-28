@@ -16,21 +16,26 @@ div.menu-button{
     margin: auto 3rem;
 
     font: 300 1.6rem 'Permanent Marker';
-    color: var(--color-menu-button);
+    color: var(--color-menu);
     text-decoration: none;
-    
- }
+  }
 
-.menu-button img{
-    width: 15vw;
+  .menu-button svg{
     margin: 1rem auto;
-    transition: filter 1s, width 0.5s;
+    height: 14rem;
  }
 
- .menu-button img:hover{
-    filter: opacity(80%);
-    width: 260px;
+ svg.ButtonIcon{
+  width: 15vw;
+  margin: 1rem auto;
+  transition: filter 1s, width 0.5s, height 0.5s;
  }
+
+ .menu-button svg:hover{
+  filter: opacity(80%);
+  width: 260px;
+  height: 260px;
+}
 
  @media(max-width:420px){
     div.menu{
