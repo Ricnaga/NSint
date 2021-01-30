@@ -5,7 +5,6 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "jest": "^26.6.3",
     "nunjucks": "^3.2.2",
     "sqlite-async": "^1.1.0",
     "sqlite3": "^5.0.0"
