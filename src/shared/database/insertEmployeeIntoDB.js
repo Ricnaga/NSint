@@ -1,4 +1,4 @@
-module.exports = async function (db, employee) {
+module.exports = async (db, employee) => {
   const { name, cpf, phone, money, admission, job } = employee;
   const insertOnTable = await db.run(`
         INSERT INTO db_employee (

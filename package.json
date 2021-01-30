@@ -1,7 +1,7 @@
 {
   "name": "NSint",
   "scripts": {
-    "dev": "nodemon --inspect src/server.js"
+    "dev": "nodemon --inspect src/shared/infra/8080/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",

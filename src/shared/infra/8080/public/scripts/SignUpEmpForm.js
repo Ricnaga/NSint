@@ -5,10 +5,10 @@ document.querySelector('.register').onclick = function signUp() {
   const formElement = createFormBtn(
     'form',
     'action',
-    '/signUp_employee',
+    '/employee/create',
     'method',
     'POST',
-    'sign_employee',
+    'createEmployee',
     'animate-up',
   );
 
@@ -17,7 +17,7 @@ document.querySelector('.register').onclick = function signUp() {
     'type',
     'submit',
     'form',
-    'sign_employee',
+    'createEmployee',
     'signUpButton',
     'animate-appear',
   );

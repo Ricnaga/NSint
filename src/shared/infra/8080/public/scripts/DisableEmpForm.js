@@ -5,10 +5,10 @@ document.querySelector('.disable').onclick = function deactivated() {
   const formElement = createFormBtn(
     'form',
     'action',
-    '/disable_employee',
+    '/employee/update',
     'method',
     'POST',
-    'deactivate_employee',
+    'updateEmployee',
     'animate-up',
   );
 
@@ -17,7 +17,7 @@ document.querySelector('.disable').onclick = function deactivated() {
     'type',
     'submit',
     'form',
-    'deactivate_employee',
+    'updateEmployee',
     'deactivateButton',
     'animate-appear',
   );
