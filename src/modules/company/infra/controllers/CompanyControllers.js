@@ -1,3 +1,5 @@
+const InternalErrors = require('../../../../shared/errors/InternalErrors');
+
 async function show(req, res) {
   return res.render('company.html');
 }
@@ -22,7 +24,7 @@ async function create(req, res) {
       message: 'Cadastro realizado com sucesso!',
     });
   } catch (error) {
-    console.error(error);
+    throw new InternalErrors('Ocorreu um erro ao cadastrar empregado', 400);
   }
 }
 
@@ -56,7 +58,7 @@ async function update(req, res) {
       message: 'Empresa desativada com sucesso!!!',
     });
   } catch (error) {
-    console.error(error);
+    throw new InternalErrors('Ocorreu um erro ao desativar empregado', 400);
   }
 }
 

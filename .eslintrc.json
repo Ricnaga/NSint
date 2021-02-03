@@ -19,6 +19,7 @@
         "sourceType": "module"
     },
     "rules": {
+      "class-methods-use-this":"off",
       "no-console":"off",
       "prettier/prettier": "error",
       "no-undef":"off",
