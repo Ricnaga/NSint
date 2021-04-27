@@ -1,0 +1,84 @@
+.container img{
+  position: fixed;
+  z-index: -1;
+}
+
+.allData{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.getData{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem auto;
+}
+
+
+select{
+  text-align: center;
+  width: 180px;
+  height: 40px;
+  border-radius: 3rem 0 0 3rem;
+  padding: 0 1rem;
+  border: 0;
+}
+
+.back_index{
+  padding: 0.4em 2rem;
+  border: 0;
+
+  border-radius: 0 3rem 3rem 0;
+
+  background: var(--color-menu);
+
+  font: 100 2rem 'Permanent Marker';
+  color: var(--color-menu-button);
+  text-decoration: none;
+}
+
+button[type='submit']{
+  cursor: pointer;
+  border-radius: 0.4em;
+  border: 0;
+  padding: 0.8em;
+
+  background: var(--color-menu);
+
+  font-family:'Permanent Marker';
+  font-size: 2rem;
+  color: var(--color-menu-button);
+}
+
+.setData{
+  width: 90vw;
+  height: 100vw;
+  max-height: 550px;
+
+  overflow: auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px var(--color-menu) solid;
+
+}
+
+.setData table {
+  width: 100%;
+  height: 16%;
+  color: white;
+}
+
+.setData table thead{
+  font-size: 3rem;
+  background-color: var(--color-menu-button);
+}
+
+.setData table tbody{
+  text-align: center;
+  font-size: 2rem;
+}
