@@ -1,5 +1,5 @@
 const Database = require('../create_table');
-const insert_db = require('../insertCompanyIntoDB');
+const insert_db = require('../insert_company');
 
 Database.then(async db => {
   testCompany = {
