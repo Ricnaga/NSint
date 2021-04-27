@@ -2,6 +2,7 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 
 const server = express();
+const PORT = 3000;
 
 const { allRoutes } = require('./routes');
 
@@ -15,8 +16,8 @@ server
   .use(express.static('src/shared/infra/8080/public'))
   .use(allRoutes)
 
-  .listen(5500, () => {
+  .listen(PORT, () => {
     console.log(
-      "👀 Server localhost:5500 is being watched - 'Quis custodiet ipsos custodes? 🤔'!",
+      `👀 Server localhost:${PORT} is being watched - 'Quis custodiet ipsos custodes? 🤔'!`,
     );
   });

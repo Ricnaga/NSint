@@ -1,5 +1,5 @@
 const { EmployeeRepository } = require('../repositories/EmployeeRepository');
-const Database = require('../../../../../shared/database/create_table');
+const Database = require('../../../../../shared/database/sql/create_table');
 
 class UpdateEmployeeService {
   async run(cpf) {

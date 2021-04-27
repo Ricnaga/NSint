@@ -1,5 +1,5 @@
 const InternalErrors = require('../../../../../shared/errors/InternalErrors');
-const Database = require('../../../../../shared/database/create_table');
+const Database = require('../../../../../shared/database/sql/create_table');
 const { EmployeeRepository } = require('../repositories/EmployeeRepository');
 
 class CreateEmployeeService {

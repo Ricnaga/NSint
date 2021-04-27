@@ -1,9 +1,9 @@
-const Database = require('../../../../../shared/database/create_table');
+const Database = require('../../../../../shared/database/sql/create_table');
 
 class CompanyRepository {
   async create(companyData) {
     const { name, cnpj, address, payment } = companyData;
-    const insertInDataBase = require('../../../../../shared/database/insertCompanyIntoDB');
+    const insertInDataBase = require('../../../../../shared/database/sql/insert_company');
 
     const db = await Database;
     await insertInDataBase(db, { name, cnpj, address, payment });

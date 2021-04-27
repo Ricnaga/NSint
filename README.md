@@ -1,47 +1,65 @@
+![GitHub](https://img.shields.io/github/license/Ricnaga/NSint)
+
+# <div align="center"> Nsint </div>
+
 #### <div align="right">- Projeto em andamento <div>
-# <div align="center"># NSint - Neon Pinturas sistemas interno<div>
-## <div align="center">Simulação de uma aplicação interna de uma empresa fictícia de pinturas de Neon.<div>
-### <div align="center">Sumário <div>
-### <div align="center">================= <div>
+
+### <div align="center"> Conteúdo de criação própria abordando conceitos sobre: </div>
+
+#### 1. HTML
+#### 2. CSS
+#### 3. Javascript
+#### 4. DOM - Data object Model
+#### 5. ExpressJS
+#### 6. SQL
+#### 7. Template engine Nunjucks
+#### 8. DDD - domain driven design
+#### 9. TDD - JestJS
+
+## <div align="center"> Sumário </div>
 <!--ts-->
-   - [Requisitos](#Requisitos)
-   - [Tecnologias utilizadas](#tecnologias-utilizadas)
-   - [Autor](#autor)
-   - [Licença](#Licença)
+   - [Requisitos](#<div-align="center">Requisitos</div>)
+   - [Tecnologias utilizadas](#<div-align="center">Tecnologias-utilizadas</div>)
+   - [Autor](#<div-align="center">Autor</div>)
 <!--te-->
+## <div align="center">Requisitos</div>
+Para executar a aplicação é necessário instalar algumas ferramentas tais como um editor de códigos para realizar compilação dos mesmos. Nesse projeto foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/) para compilação do código, [Git Bash](https://gitforwindows.org/) para baixar o repositório e baixar todas as dependências necessárias. Além do mais, é necessário instalar o [plugin sqlite na seção de plugin do Vscode](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite).
 
-## <div align="center">Requisitos<div>
-Antes de começar é necessário instalar algumas ferramentas, tais como um editor de códigos para realizar compilação dos mesmos. Os códigos desse repositório foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/) e [Git Bash](https://gitforwindows.org/). Após instalados, será necessário instalar o também o [Yarn](https://yarnpkg.com/) para que seja possível automatizar as instalações de todas as dependências que foram usadas nessa aplicação.
 
-No terminal, realize a clonagem do repositório.\
-$ git clone <https://github.com/Ricnaga/NSint> \
-Acesse o projeto.\
-$ cd NSint \
-Execute o comando yarn para reaver todos as dependências instaladas dessa aplicação.\
-Antes de iniciar a aplicação, de preferência, o banco de dados pode ter armazenado algum valor prévio com o seguinte comando:\
-$ node src/database/test/test_value_db.js
-Feito todos os passos, é hora de iniciar a aplicação: \
-$ npm run dev \
-Iniciado cada aplicação, abra qualquer navegador e digite http://localhost:5500 
+```bash
+# Baixe o repositório.
+$ git clone https://github.com/Ricnaga/NSint.git
 
-## <div align="center">Tecnologias utilizadas<div>
+# Acesse a pasta do projeto.
+$ cd NSint
+
+# Agora que baixou e acessou o repositório, vamos começar a instalação das dependências.
+$ yarn ( caso não utilize o yarn execute apenas npm -i)
+
+# Depois de instalado todas as dependências, abra a aplicação via vscode
+$ code .
+
+# Agore execute a aplicação.
+$ yarn dev (caso não utilize o yarn: npm run dev)
+
+# A aplicação iniciará na porta 3000
+# No navegador digite: http://localhost:3000
+```
+
+##  <div align="center">Tecnologias utilizadas</div>
 - [HTML](https://www.w3.org/HTML)
 - [CSS](https://www.w3.org/Style/CSS/)
+- [Javacript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [D.O.M.](https://dom.spec.whatwg.org/#what)
 - [NodeJS](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/getting-started/install)
-- [Git Bash](https://gitforwindows.org/)
-- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Express](https://expressjs.com/pt-br/starter/installing.html)
-- [Nodemon](https://nodemon.io/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
 - [Sqlite](https://www.nodenpm.com/sqlite-async/package.html)
+- [Jest](https://jestjs.io/)
 
-
-## <div align="center">Autor<div>
-Gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona
+## <div align="center">Autor</div>
+<div align="center">Atividade de criação própria, gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona.<br>
 <a href="https://www.linkedin.com/in/ricardo-nagatomy-56553254"><img src="https://img.shields.io/badge/-RicardoNaga-blue?style=flat-square&logo=Linkedin&logoColor=white"></a>
 <a href="https://app.rocketseat.com.br/me/ricardo-nagatomy-08130"><img src="https://img.shields.io/badge/-Rocketseat-000?style=flat-square&logo=&logoColor=white"></a>
+</div>
 
-## <div align="center">Licença<div>
-
-![GitHub](https://img.shields.io/github/license/Ricnaga/NSint)

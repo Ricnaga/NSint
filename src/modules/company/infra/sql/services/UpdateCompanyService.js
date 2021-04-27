@@ -1,5 +1,5 @@
 const { CompanyRepository } = require('../repositories/CompanyRepository');
-const Database = require('../../../../../shared/database/create_table');
+const Database = require('../../../../../shared/database/sql/create_table');
 
 class UpdateCompanyService {
   async run(cnpj) {
