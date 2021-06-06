@@ -1,7 +1,6 @@
 const {
   CreateCompanyService,
 } = require('../sql/services/CreateCompanyService');
-const { ListCompanyService } = require('../sql/services/ListCompanyService');
 const {
   UpdateCompanyService,
 } = require('../sql/services/UpdateCompanyService');
@@ -26,9 +25,6 @@ class CompanyControllers {
     const { cnpj } = request.body;
 
     try {
-      const listCompanyService = new ListCompanyService();
-      await listCompanyService.run(cnpj);
-
       const updateCompanyService = new UpdateCompanyService();
       await updateCompanyService.run(cnpj);
 

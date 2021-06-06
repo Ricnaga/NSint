@@ -16,6 +16,12 @@ class CreateEmployeeService {
     }
 
     const employeeRepository = new EmployeeRepository();
+    const findEmployee = await employeeRepository.findByCPF(db, cpf);
+
+    if (findEmployee.length) {
+      throw new InternalErrors('Usuário ja existente no banco de dados', 503);
+    }
+
     await employeeRepository.create(db, {
       name,
       cpf,

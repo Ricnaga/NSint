@@ -5,8 +5,6 @@ const {
   CreateEmployeeService,
 } = require('../sql/services/CreateEmployeeService');
 
-const { ListEmployeeService } = require('../sql/services/ListEmployeeService');
-
 class EmployeeControllers {
   async create(request, response) {
     const { name, cpf, phone, money, admission, job } = request.body;
@@ -34,9 +32,6 @@ class EmployeeControllers {
     const { cpf } = request.body;
 
     try {
-      const listEmployeeService = new ListEmployeeService();
-      await listEmployeeService.run(cpf);
-
       const updateEmployeeService = new UpdateEmployeeService();
       await updateEmployeeService.run(cpf);
 

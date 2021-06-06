@@ -1,5 +1,3 @@
-const Database = require('../../../../../shared/database/sql/create_table');
-
 class CompanyRepository {
   async create(db, companyData) {
     const { name, cnpj, address, payment } = companyData;

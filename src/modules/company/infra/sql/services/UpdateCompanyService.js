@@ -1,5 +1,6 @@
 const { CompanyRepository } = require('../repositories/CompanyRepository');
 const Database = require('../../../../../shared/database/sql/create_table');
+const InternalErrors = require('../../../../../shared/errors/InternalErrors');
 
 class UpdateCompanyService {
   async run(cnpj) {
@@ -12,6 +13,12 @@ class UpdateCompanyService {
       );
     }
     const companyRepository = new CompanyRepository();
+    const findCompany = await companyRepository.findByCNPJ(db, cnpj);
+
+    if (!findCompany.length) {
+      throw new InternalErrors('Empresa inexistente no banco de dados', 404);
+    }
+
     await companyRepository.update(db, cnpj);
   }
 }

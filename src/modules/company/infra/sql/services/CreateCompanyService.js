@@ -16,6 +16,12 @@ class CreateCompanyService {
     }
 
     const companyRepository = new CompanyRepository();
+    const findCompany = await companyRepository.findByCNPJ(db, cnpj);
+
+    if (findCompany.length) {
+      throw new InternalErrors('Empresa ja cadastrada no banco de dados');
+    }
+
     await companyRepository.create(db, { name, cnpj, address, payment });
   }
 }
