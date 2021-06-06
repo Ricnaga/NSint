@@ -1,26 +1,19 @@
 const {
-  ListAllCompaniesService,
-} = require('../../database/sql/services/ListAllCompaniesService');
-const {
-  ListAllEmployeesService,
-} = require('../../database/sql/services/ListAllEmployeesService');
+  ListAllEmployeesCompaniesService,
+} = require('../../database/sql/services/ListAllEmployeesCompaniesService');
 
 class SharedControllers {
   async show(request, response) {
     const { allData } = request.body;
 
     try {
-      if (allData === 'employee') {
-        const listAllEmployeesService = new ListAllEmployeesService();
-        const foundOnServices = await listAllEmployeesService.run();
+      const listAll = new ListAllEmployeesCompaniesService();
+      const foundOnServices = await listAll.run(allData);
 
-        return { foundOnServices, AllData: 'employee' };
-      }
-
-      const listAllCompaniesService = new ListAllCompaniesService();
-      const foundOnServices = await listAllCompaniesService.run();
-
-      return { foundOnServices, AllData: 'company' };
+      return response.status(200).render('allData.html', {
+        data: foundOnServices,
+        setData: allData,
+      });
     } catch (error) {
       return response.json(error);
     }

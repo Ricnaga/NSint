@@ -1,3 +1,5 @@
+<img src="cover.jpg" alt="capa" />
+
 ![GitHub](https://img.shields.io/github/license/Ricnaga/NSint)
 
 # <div align="center"> Nsint </div>
@@ -6,15 +8,12 @@
 
 ### <div align="center"> Conteúdo de criação própria abordando conceitos sobre: </div>
 
-#### 1. HTML
-#### 2. CSS
-#### 3. Javascript
-#### 4. DOM - Data object Model
-#### 5. ExpressJS
-#### 6. SQL
-#### 7. Template engine Nunjucks
-#### 8. DDD - domain driven design
-#### 9. TDD - JestJS
+ - HTML | CSS | Javascript
+ - DOM - Data Object Model
+ - ExpressJS
+ - SQL
+ - Nunjucks: Template engine
+ - DDD - domain driven design
 
 ## <div align="center"> Sumário </div>
 <!--ts-->
@@ -55,7 +54,6 @@ $ yarn dev (caso não utilize o yarn: npm run dev)
 - [Express](https://expressjs.com/pt-br/starter/installing.html)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
 - [Sqlite](https://www.nodenpm.com/sqlite-async/package.html)
-- [Jest](https://jestjs.io/)
 
 ## <div align="center">Autor</div>
 <div align="center">Atividade de criação própria, gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona.<br>

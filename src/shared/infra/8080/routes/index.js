@@ -6,7 +6,7 @@ const {
   companyRoutes,
 } = require('../../../../modules/company/infra/routes/company.routes');
 
-const { SharedControllers } = require('../../controllers/SharedControllers');
+const { sharedControllers } = require('../../controllers');
 
 const allRoutes = Router();
 
@@ -15,17 +15,7 @@ allRoutes
   .use('/company', companyRoutes)
 
   .get('/', (_, res) => res.render('index.html'))
-
   .get('/shared', (_, res) => res.render('allData.html'))
-
-  .post('/show', async (req, res) => {
-    const sharedControllers = new SharedControllers();
-    const { foundOnServices, AllData } = await sharedControllers.show(req, res);
-
-    return res.render('allData.html', {
-      data: foundOnServices,
-      setData: AllData,
-    });
-  });
+  .post('/show', sharedControllers.show);
 
 module.exports = { allRoutes };
