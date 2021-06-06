@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/company.css">
-  <link rel="stylesheet" href="../styles/animations.css">
-
-  <title>NSint - Neon Pinturas sistema interno</title>
-</head>
+  {% set page = {'styles': 'company'} %}
+  {% include "partials/head.html" %}
 
 <body>
   <div class="container ">
     <img src="../images/bg_logo.jpg" alt="logo" class="logo">
 
     <div class="menu">
-      <h1>NSint - Neon Pinturas sistema interno</h1>
 
-      <div class="button">
-        <button class="register">Cadastro</button>
-        <button class="disable">Desativar</button>
-      </div>
+      {% include "partials/header-button.html" %}
+
       <div class="forms"></div>
 
       <script src="../scripts/CreateCompanyForm.js"></script>
       <script src="../scripts/UpdateCompanyForm.js"></script>
-      <p id='sucessMsg'>{{ message }}</p>
-      <a href="/" class="back_index">home</a>
+
+      {% include "partials/success-goback-buttons.html" %}
     </div>
 
   </div>

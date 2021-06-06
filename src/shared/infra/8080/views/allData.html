@@ -73,17 +73,17 @@
               </tr>
             </thead>
 
-            <tbody>
-              {%for company in data %}
-              <tr>
-                <td>{{company.id}}</td>
-                <td>{{company.name}}</td>
-                <td>{{company.cnpj}}</td>
-                <td>{{company.address}}</td>
-                <td>{{company.payment}}</td>
-                <td>{{company.account}}</td>
-              </tr>
-              {% endfor %}
+          <tbody>
+            {%for company in data %}
+            <tr>
+              <td>{{company.id}}</td>
+              <td>{{company.name}}</td>
+              <td>{{company.cnpj}}</td>
+              <td>{{company.address}}</td>
+              <td>{{company.payment}}</td>
+              <td>{{company.account}}</td>
+            </tr>
+            {% endfor %}
             {% endif %}
           </tbody>
 
