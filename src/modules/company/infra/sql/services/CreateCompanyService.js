@@ -11,12 +11,12 @@ class CreateCompanyService {
     if (!db) {
       throw new InternalErrors(
         'Ocorreu um erro ao criar cadastro dos clientes',
-        503,
+        400,
       );
     }
 
     const companyRepository = new CompanyRepository();
-    await companyRepository.create({ name, cnpj, address, payment });
+    await companyRepository.create(db, { name, cnpj, address, payment });
   }
 }
 

@@ -1,7 +1,7 @@
 const { CompanyRepository } = require('../repositories/CompanyRepository');
 const Database = require('../../../../../shared/database/sql/create_table');
 
-class UpdateCompanyService {
+class ListCompanyService {
   async run(cnpj) {
     const db = await Database;
 
@@ -12,8 +12,12 @@ class UpdateCompanyService {
       );
     }
     const companyRepository = new CompanyRepository();
-    await companyRepository.update(db, cnpj);
+    const listCompany = await companyRepository.show(db, cnpj);
+
+    if (listCompany < 1) {
+      throw new InternalErrors('Empresa inexistente no banco de dados', 400);
+    }
   }
 }
 
-module.exports = { UpdateCompanyService };
+module.exports = { ListCompanyService };

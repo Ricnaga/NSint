@@ -1,37 +1,30 @@
 const Database = require('../../../../../shared/database/sql/create_table');
 
 class CompanyRepository {
-  async create(companyData) {
+  async create(db, companyData) {
     const { name, cnpj, address, payment } = companyData;
-    const insertInDataBase = require('../../../../../shared/database/sql/insert_company');
+    const createCompany = require('../../../../../shared/database/sql/insert_company');
 
-    const db = await Database;
-    await insertInDataBase(db, { name, cnpj, address, payment });
+    await createCompany(db, { name, cnpj, address, payment });
   }
 
-  async update(cnpj) {
+  async show(db, cnpj) {
     const query = `
         SELECT * FROM db_company
         WHERE
         cnpj = ${cnpj}
         `;
 
-    try {
-      const db = await Database;
-      const consult = await db.all(query);
+    const listCompany = await db.all(query);
+    return listCompany;
+  }
 
-      if (consult < 1) {
-        throw new InternalErrors('Empresa inexistente no banco de dados', 400);
-      }
-
-      await db.run(`
+  async update(db, cnpj) {
+    await db.run(`
             UPDATE db_company
             SET account = 'n'
             WHERE cnpj = ${cnpj}
         `);
-    } catch (error) {
-      throw new InternalErrors('Ocorreu um erro ao desativar empregado', 400);
-    }
   }
 }
 
