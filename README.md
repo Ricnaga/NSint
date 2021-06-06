@@ -4,7 +4,7 @@
 
 # <div align="center"> Nsint </div>
 
-#### <div align="right">- Projeto em andamento <div>
+#### <div align="right">- Projeto finalizo <div>
 
 ### <div align="center"> Conteúdo de criação própria abordando conceitos sobre: </div>
 
