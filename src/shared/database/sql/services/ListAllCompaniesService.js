@@ -13,7 +13,14 @@ class ListAllCompaniesService {
       );
     }
     const sharedRepository = new SharedRepository();
-    const foundOnRepository = await sharedRepository.find('company');
+    const foundOnRepository = await sharedRepository.find(db, 'company');
+
+    if (foundOnRepository < 1) {
+      throw new InternalErrors(
+        'Empresa/Funcionário inexistente no banco de dados',
+      );
+    }
+
     return foundOnRepository;
   }
 }

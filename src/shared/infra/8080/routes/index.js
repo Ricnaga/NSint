@@ -14,22 +14,17 @@ allRoutes
   .use('/employee', employeeRoutes)
   .use('/company', companyRoutes)
 
-  .get('/', (req, res) => {
-    return res.render('index.html');
-  })
+  .get('/', (_, res) => res.render('index.html'))
 
-  .get('/shared', (_, res) => {
-    return res.render('allData.html');
-  })
+  .get('/shared', (_, res) => res.render('allData.html'))
 
   .post('/show', async (req, res) => {
-    const { allData } = req.body;
     const sharedControllers = new SharedControllers();
-    const foundOnControllers = await sharedControllers.show(allData);
+    const { foundOnServices, AllData } = await sharedControllers.show(req, res);
 
     return res.render('allData.html', {
-      data: foundOnControllers,
-      setData: allData,
+      data: foundOnServices,
+      setData: AllData,
     });
   });
 
