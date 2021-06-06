@@ -8,7 +8,7 @@ class CompanyRepository {
     await createCompany(db, { name, cnpj, address, payment });
   }
 
-  async show(db, cnpj) {
+  async findByCNPJ(db, cnpj) {
     const query = `
         SELECT * FROM db_company
         WHERE

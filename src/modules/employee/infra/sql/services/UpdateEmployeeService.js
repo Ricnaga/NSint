@@ -6,26 +6,11 @@ class UpdateEmployeeService {
     const db = await Database;
 
     if (!db) {
-      throw new InternalErrors(
-        'Ocorreu um erro ao criar cadastro do empregado',
-        503,
-      );
-    }
-
-    const query = `
-          SELECT * FROM db_employee
-          WHERE
-          cpf = ${cpf}
-          `;
-
-    const consult = await db.all(query);
-
-    if (consult < 1) {
-      throw new InternalErrors('Usuário inexistente no banco de dados!!!', 400);
+      throw new InternalErrors('Ocorreu no banco de dados', 503);
     }
 
     const employeeRepository = new EmployeeRepository();
-    await employeeRepository.update(cpf);
+    await employeeRepository.update(db, cpf);
   }
 }
 

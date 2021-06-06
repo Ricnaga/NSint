@@ -1,22 +1,28 @@
-const Database = require('../../../../../shared/database/sql/create_table');
-
 class EmployeeRepository {
-  async create(dataEmployee) {
+  async create(db, dataEmployee) {
     const { name, cpf, phone, money, admission, job } = dataEmployee;
-    const insertInDataBase = require('../../../../../shared/database/sql/insert_employee');
+    const createEmployee = require('../../../../../shared/database/sql/insert_employee');
 
-    const db = await Database;
-    await insertInDataBase(db, { name, cpf, phone, money, admission, job });
+    await createEmployee(db, { name, cpf, phone, money, admission, job });
   }
 
-  async update(cpf) {
-    const db = await Database;
-
+  async update(db, cpf) {
     await db.run(`
               UPDATE db_employee
               SET account = 'n'
               WHERE cpf = ${cpf}
           `);
+  }
+
+  async findByCPF(db, cpf) {
+    const query = `
+        SELECT * FROM db_employee
+        WHERE
+        cpf = ${cpf}
+        `;
+
+    const listEmployee = await db.all(query);
+    return listEmployee;
   }
 }
 

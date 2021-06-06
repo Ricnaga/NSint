@@ -1,8 +1,7 @@
 const { Router } = require('express');
-const { CompanyControllers } = require('../controllers/CompanyControllers');
+const { companyControllers } = require('../controllers');
 
 const companyRoutes = Router();
-const companyControllers = new CompanyControllers();
 
 companyRoutes
   .get('/show', (_, res) => res.render('company.html'))

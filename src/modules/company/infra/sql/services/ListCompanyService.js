@@ -12,7 +12,7 @@ class ListCompanyService {
       );
     }
     const companyRepository = new CompanyRepository();
-    const listCompany = await companyRepository.show(db, cnpj);
+    const listCompany = await companyRepository.findByCNPJ(db, cnpj);
 
     if (listCompany < 1) {
       throw new InternalErrors('Empresa inexistente no banco de dados', 400);

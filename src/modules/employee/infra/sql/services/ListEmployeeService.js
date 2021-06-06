@@ -2,10 +2,8 @@ const InternalErrors = require('../../../../../shared/errors/InternalErrors');
 const Database = require('../../../../../shared/database/sql/create_table');
 const { EmployeeRepository } = require('../repositories/EmployeeRepository');
 
-class CreateEmployeeService {
-  async run(dataEmployee) {
-    const { name, cpf, phone, money, admission, job } = dataEmployee;
-
+class ListEmployeeService {
+  async run(cpf) {
     const db = await Database;
 
     if (!db) {
@@ -16,15 +14,12 @@ class CreateEmployeeService {
     }
 
     const employeeRepository = new EmployeeRepository();
-    await employeeRepository.create(db, {
-      name,
-      cpf,
-      phone,
-      money,
-      admission,
-      job,
-    });
+    const foundEmployee = await employeeRepository.findByCPF(db, cpf);
+
+    if (foundEmployee < 1) {
+      throw new InternalErrors('Não foi possível localizar funcionário', 404);
+    }
   }
 }
 
-module.exports = { CreateEmployeeService };
+module.exports = { ListEmployeeService };
